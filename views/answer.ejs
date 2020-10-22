@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The answer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1> Well Done! </h1>
+        <p> Congratulations my friend <%= formData.first %>!
+        You have achieved a lot by your age of <%= formData.age %>. <br>
+            I wish you have as much <%= formData.food %> as you want
+        <% if (formData.pets === "true" ) {  %> 
+            You have the best pet in the world!
+            <% } else {  %> 
+                Soon you will get a nice pet, as you always wanted
+            <% } %> 
+        </p>
+    </section>
+</body>
+</html>

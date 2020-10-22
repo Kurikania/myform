@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Demo Form App</title>
+</head>
+<body>
+    <section> 
+    <form action="/home" method="post" id = "form">
+<div class = "tab"> 
+    <h2 class = "formHeading">Please Register</h2>
+    <label for="username">Username</label>
+    <input type="text" id = "username" name = "username"> <br>
+    <label for="first">First Name</label>
+    <input type="text" id = "first" name = "first">
+</div> 
+
+<div class = "tab"> 
+    <h2>Tell us more About Yourself</h2>
+    <div><label for="age">Age</label> <br>
+        <input type="number" id = "age" name = "age" max="100" min="1"></div>
+    <div>
+        <label for="food">Favorite Food</label> <br>
+        <textarea id = "food" cols="30" rows="5" name="food">burritos, ice cream, steak</textarea></div>
+        <h2> Do you have pets? </h2>
+    <div>
+        <label for="hasPets"> Yes </label>
+        <input type = "radio" name = "pets" id = "hasPets" value = true> 
+        <label for="noPets"> No </label>
+        <input type = "radio" name = "pets" id = "noPets" value = false> 
+    </div>
+</div>
+
+
+<div style="overflow:auto;">
+    <div style="float:center;">
+    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+    </div>
+
+
+</section>
+
+
+    
+</form>
+<script  src="app.js"></script>
+</body>
+</html>

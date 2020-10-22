@@ -1,0 +1,50 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(212, 113, 113), rgb(230, 188, 141));
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+section {
+    width: 400px;
+    margin: 50px auto;
+    background-color: beige;
+    padding: 20px 30px;
+    box-shadow: 0 0 15px rgb(131, 13, 13);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tab {
+    display: none;
+}
+
+button {
+    width: 100px;
+    background: crimson;
+    font-weight: bold;
+    color: white;
+    border: none;
+    margin: 10px 5px;
+    padding: 10px;
+} 
+
+button:hover, button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+input {
+    padding: 10px;
+    margin: 10px; 
+}
+label {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
